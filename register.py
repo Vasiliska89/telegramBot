@@ -1,11 +1,11 @@
 import telebot
+import config
 from telebot import types
 
-#  5140658956:AAFNDhEPeZk6WIRGZMN5i6ic4bwmcXqppUs
 name = ''
 surname = ''
 age = 0
-bot = telebot.TeleBot("5140658956:AAFNDhEPeZk6WIRGZMN5i6ic4bwmcXqppUs")
+bot = telebot.TeleBot(config.REGISTERTOKEN)
 
 
 @bot.message_handler(commands=['start', 'help'])
